@@ -48,7 +48,8 @@ body {
   height: auto;
 }
 
-.section-about {
+.section-about, 
+.section-portfolio {
   padding: 120px 0 107px;
   width: 100%;
   max-width: 1445px;
@@ -132,6 +133,24 @@ hr {
 }
 
 
+/* Skills */
+.skill__item {
+  margin: 30px auto 111px;
+}
+
+.skill__title {
+  margin: 24px auto 40px;
+  width: 85px;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #828282;
+}
+
+.skill__rate-figma {
+  margin-top: 23px;
+}
 
 
 /* Media */
@@ -142,5 +161,7 @@ hr {
   .btn-lang, .vr {
     display: none;
   }
+
+  
 
 }
