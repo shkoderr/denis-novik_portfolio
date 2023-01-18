@@ -39,6 +39,11 @@ body {
   margin: 30px auto 40px;
 }
 
+.container-contacts {
+  padding: 115px 0 123px;
+}
+
+
 
 /* Section */
 
@@ -48,12 +53,17 @@ body {
   height: auto;
 }
 
-.section-about, 
-.section-portfolio {
+.section-about {
   padding: 120px 0 107px;
-  width: 100%;
   max-width: 1445px;
-  height: 506px;
+  height: auto;
+  background: #F6F6F6;
+}
+
+.section-portfolio {
+  padding-top: 112px;
+  max-width: 1445px;
+  height: auto;
   background: #F6F6F6;
 }
 
@@ -152,6 +162,64 @@ hr {
   margin-top: 23px;
 }
 
+
+/* Portfolio */
+.portfolio__example {
+  margin: 39px auto 44px;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__text {
+  margin-bottom: 100px;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #070707;
+}
+
+.portfolio__text:hover {
+  text-decoration: underline;
+  color: #070707;
+}
+
+
+/* Contacts */
+.btn-dark {
+  margin-bottom: 85px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding: 6px 30px;
+  border-radius: 20px;
+  transition: color, background-color .2s linear;
+}
+
+.btn-dark:hover:focus {
+  color: #070707;
+  background-color: #fff;
+}
+
+.social-item {
+  margin: 0 31px;
+  transition: opacity .2s linear;
+}
+
+.social-item:hover,
+.social-item:focus {
+  opacity: 0.5;
+}
+
+.contact-text {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #828282;
+}
 
 /* Media */
 
