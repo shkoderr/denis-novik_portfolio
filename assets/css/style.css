@@ -13,8 +13,9 @@
 
 body {
   font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 400;
   width: 100%;
-  min-width: 1445px;
+  max-width: 1445px;
   margin: 0;
   color:#070707;
   line-height: 1.2;
@@ -41,7 +42,8 @@ hr {
 }
 /* Section */
 
-.section-about {
+.section-about, 
+.section-portfolio {
   background: #F6F6F6;
 }
 
@@ -50,6 +52,9 @@ hr {
   padding: 120px 0 17px;
 }
 
+.section-portfolio {
+  padding: 112px 0 96px;
+}
 .section__title {
   text-align: center;
   font-family: 'Gilroy-Bold';
@@ -59,11 +64,17 @@ hr {
 
 .section__text {
   text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
-.section__text p {
+.section__text-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 485px;
-  margin: 0 auto;
+  height: auto;
+  padding-bottom: 107px;
 }
 
 
@@ -71,6 +82,7 @@ hr {
 .container {
   width: 100%;
   max-width: 945px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -179,3 +191,55 @@ hr {
   height: auto;
 }
 
+
+/* Skills */
+.section-skills .section__title {
+  padding-top: 90px;
+}
+
+.section__text-skills {
+  margin: 69px auto 83px;
+}
+
+.skills {
+  margin-bottom: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__item {
+  text-align: center;
+}
+
+.skills__item-title {
+  margin: 24px auto 40px;
+  width: 100%;
+  max-width: 80px;
+  min-height: 34px;
+  font-family: 'Gilroy-bold', sans-serif;
+  font-size: 14px;
+  color: #828282;
+}
+
+.skills__item-rate img {
+  margin-right: 9px;
+}
+
+/* Portfolio */
+.section__title-portfolio {
+  margin-bottom: 47px;
+}
+
+.works__item-text {
+  text-align: center;
+  display: block;
+  margin: 45px auto 100px;
+  color: inherit;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.works__item-text:hover {
+  text-decoration: underline;
+}
