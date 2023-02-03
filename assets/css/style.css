@@ -21,6 +21,8 @@ body {
   line-height: 1.1;
 }
 
+
+
 *,
 *:before,
 *:after {
@@ -204,20 +206,13 @@ hr {
   text-transform: uppercase;
 
   background: none;
+  color: #828282;
   border: none;
   padding: 0;
   cursor: pointer;
 }
 
-.intro__lang-btn-ru {
-  color: #828282;
-}
-
-.intro__lang-btn-eng {
-  color: #000;
-}
-
-.intro__lang-btn-eng::before {
+.intro__lang-btn::before {
   display: block;
   content: '';
   width: 2px;
