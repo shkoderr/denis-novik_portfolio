@@ -91,7 +91,7 @@ hr {
   width: 100%;
   max-width: 945px;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* Nav */
@@ -342,7 +342,7 @@ hr {
 }
 
 .social__text {
-  margin: 45px 123px;
+  margin: 45px auto;
   text-align: center;
   font-size: 14px;
   color: #828282;
@@ -350,21 +350,7 @@ hr {
 
 @media (max-width: 770px) {
   /* Nav */
-  .nav {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-  }
-
-  .nav-toggle {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 5vw;
-  }
+ 
 
   /* Intro */
   .intro__lang {
@@ -387,7 +373,30 @@ hr {
 
 @media (max-width: 450px) {
   /* Nav */
-  
+  .nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav__link.active {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 5vw;
+  }
   
   /* Intro */
   .intro__img {
@@ -397,11 +406,12 @@ hr {
 
   .intro__img-mobile {
     display: block;
-    width: 100%;
   }
 
   .intro__img-mobile img {
     margin: 0 auto 83px;
+    width: 100%;
+    height: auto;
   }
 
   /* Skills */
@@ -412,5 +422,10 @@ hr {
 
   .skills__item:last-child {
     margin-bottom: 0;
+  }
+
+  /* Social */
+  .social__item {
+    margin: 0 20px;
   }
 }
