@@ -15,6 +15,7 @@ body {
   font-family: 'Gilroy-Medium', sans-serif;
   font-weight: 400;
   width: 100%;
+  overflow-x: hidden;
 
   margin: 0;
   color: #070707;
@@ -352,13 +353,22 @@ hr {
 /* Media */
 @media (max-width: 990px) {
   /* Nav */
-.nav__link {
+  .nav__link {
   margin: 0 10px;
-}
+  }
 
   hr {
     display: none;
   }
+  /* Intro */
+  .intro__name {
+    margin-left: 20px;
+  }
+
+  .intro__lang {
+    margin-right: 20px;
+  }
+
 }
 
 @media (max-width: 770px) {
@@ -376,7 +386,7 @@ hr {
   
 
   .intro__prof {
-    margin: 23px 0 37px;
+    margin: 23px 20px 37px 0;
   }
 
   
@@ -412,7 +422,11 @@ hr {
   /* Intro */
   .intro__inner {
     display: block;
-    margin: 65px 0 0 26px;
+    margin: 65px 26px 0;
+  }
+
+  .intro__name {
+    margin-left: 0;
   }
 
   .intro__img {
@@ -442,5 +456,13 @@ hr {
   /* Social */
   .social__item {
     margin: 0 20px;
+  }
+}
+
+@media(max-width: 375px) {
+  /* Intro */
+  .intro__inner {
+    display: block;
+    margin: 65px 0 0 10px;
   }
 }
