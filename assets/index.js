@@ -1,23 +1,25 @@
-const toggleButton = document.querySelector('.nav-toggle');
-const nav = getElementById('#nav')
-const link = getElementById('#nav__link')
+//Collapsed navbar
+const toggleButton = document.getElementById('nav-toggle')
+const nav = document.getElementById('nav')
+const link = document.getElementById('nav__link')
+
 
 toggleButton.addEventListener('click', () => {
-  toggleButton.classList.toggle('active');
-  nav.classList.toggle('active');
-  link.classList.toggle('active');
+  toggleButton.classList.toggle('active')
+  nav.classList.toggle('active')
+  link.classList.toggle('active')
 });
 
 document.addEventListener('click', (event) => {
-  if(!toggleButton.contains(event.target)) {
+  if (!toggleButton.contains(event.target)) {
     toggleButton.classList.remove('active')
   }
 })
 
+//Switch languages
 const russianBtn = document.getElementById('russianBtn')
 const englishBtn = document.getElementById('englishBtn')
 let currentLang = 'English'
-
 
 englishBtn.addEventListener('click', () => {
   currentLang = 'English'

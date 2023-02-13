@@ -112,6 +112,10 @@ hr {
   transition: color 0.2s linear;
 }
 
+.nav.active {
+  display: block;
+}
+
 .nav__link.active {
   color: #070707;
 }
@@ -144,6 +148,7 @@ hr {
 
 .strip1 {
   top: 0;
+  transition: .2s linear;
 }
 
 .strip2 {
@@ -152,11 +157,13 @@ hr {
 
 .strip3 {
   top: 20px;
+  transition: .2s linear;
 }
 
 
 .nav-toggle.active .strip1 {
   transform: rotate(45deg)  translate(9px, 4px);
+  background-color: #828282;
 }
 
 .nav-toggle.active .strip2 {
@@ -165,6 +172,7 @@ hr {
 
 .nav-toggle.active .strip3 {
   transform: rotate(-45deg)  translate(10px, -6px);
+  background-color: #828282;
 }
 
 /* Intro */
@@ -383,13 +391,10 @@ hr {
     display: none;
   }
 
-  
-
   .intro__prof {
     margin: 23px 20px 37px 0;
   }
 
-  
 }
 
 @media (max-width: 450px) {
@@ -407,9 +412,13 @@ hr {
     display: block;
   }
 
-  .nav__link.active {
+  /* Разберись с перекрытием контента! */
+
+  .nav__link {
+    font-size: 34px;
     display: block;
     margin: 0;
+    padding: 34px 26px;
   }
 
   .nav-toggle {
@@ -418,6 +427,7 @@ hr {
     top: 80px;
     right: 5vw;
   }
+  
   
   /* Intro */
   .intro__inner {
