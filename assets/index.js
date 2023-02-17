@@ -1,20 +1,35 @@
 //Collapsed navbar
-const toggleButton = document.getElementById('nav-toggle')
-const nav = document.getElementById('nav')
-const link = document.getElementById('nav__link')
+function navPlugin(activeLink = 0) {
+  const navBtn = document.querySelector('.nav-toggle')
+  const navBar = document.querySelector('.nav')
+  const links = document.querySelectorAll('.nav__link')
 
+  links[activeLink].classList.add('active')
 
-toggleButton.addEventListener('click', () => {
-  toggleButton.classList.toggle('active')
-  nav.classList.toggle('active')
-  link.classList.toggle('active')
-});
-
-document.addEventListener('click', (event) => {
-  if (!toggleButton.contains(event.target)) {
-    toggleButton.classList.remove('active')
+  navBtn.addEventListener('touchstart', toggleMenu)
+  for (const link of links) {
+    link.addEventListener('touchstart', () => {
+      clearActiveClasses()
+      link.classList.add('active')
+    })
   }
-})
+
+  function toggleMenu() {
+    navBtn.classList.toggle('active')
+    navBar.classList.toggle('active')
+    links.classList.toggle('active')
+  }
+
+  function clearActiveClasses() {
+    navBtn.classList.remove('active')
+    navBar.classList.remove('active')
+    links.forEach((link) => {
+      link.classList.remove('active')
+    })
+  }
+}
+
+navPlugin()
 
 //Switch languages
 const russianBtn = document.getElementById('russianBtn')

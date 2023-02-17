@@ -95,7 +95,8 @@ hr {
   margin: 0 auto;
 }
 
-/* Nav */
+/* Nav and Header */
+
 .nav {
   margin-top: 33px;
   display: flex;
@@ -412,6 +413,8 @@ hr {
     display: block;
   }
 
+  /* LangButtons */
+  
   /* Разберись с перекрытием контента! */
 
   .nav__link {
@@ -427,6 +430,7 @@ hr {
     top: 80px;
     right: 5vw;
   }
+
   
   
   /* Intro */

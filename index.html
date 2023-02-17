@@ -12,12 +12,12 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <nav id="nav" class="nav">
-          <a id="nav__link" class="nav__link" href="#">Home</a>
-          <a id="nav__link" class="nav__link" href="#">About me</a>
-          <a id="nav__link" class="nav__link" href="#">Skills</a>
-          <a id="nav__link" class="nav__link" href="#">Portfolio</a>
-          <a id="nav__link" class="nav__link" href="#">Contacts</a>
+        <nav class="nav">
+          <a class="nav__link active" href="#">Home</a>
+          <a class="nav__link" href="#about">About me</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#portfolio">Portfolio</a>
+          <a class="nav__link" href="#contacts">Contacts</a>
         </nav>
 
         <button class="nav-toggle" id="nav-toggle" type="button">
@@ -52,7 +52,7 @@
   </div> <!--intro-->
 
   <section class="section section-about">
-    <div class="container">
+    <div class="container" id="about">
       <div class="section__header">
         <h2 class="section__title">About me</h>
       </div>
@@ -65,7 +65,7 @@
   </section>
 
   <section class="section section-skills">
-    <div class="container">
+    <div class="container" id="skills">
       <div class="section__header">
         <h2 class="section__title">Skills</h2>
       </div>
@@ -132,7 +132,7 @@
   </section>
 
   <section class="section section-portfolio">
-    <div class="container">
+    <div class="container" id="portfolio">
       <div class="section__title section__title-portfolio">Portfolio</div>
       <div class="works">
         <div class="works__item">
@@ -152,7 +152,7 @@
   </section>
 
   <section class="section">
-    <div class="container">
+    <div class="container" id="contacts">
       <div class="section__title section__title-contacts">Contacts</div>
       <div class="section__text section__text-contacts">Want to know more or just chat? <br> You are welcome!</div>
       <button class="button">Send message</button>
