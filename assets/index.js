@@ -1,3 +1,24 @@
+//Smooth scroll
+const links = document.querySelectorAll('a[href^="#"]')
+// Loop through each link and add a click event listener
+links.forEach((link) => {
+  link.addEventListener('click', function (el) {
+    // Prevent default link behavior
+    el.preventDefault()
+    // Get the hash value of the clicked link
+    let hash = this.hash
+    //Находим целевой элемент
+    let target = document.querySelector(hash)
+    //Вычисляем расстояние для прокрутки
+    let distance = target.offsetTop
+    // Smooth scroll animation
+    window.scrollTo({
+      top: distance,   //подумай как это применить в MOGO!
+      behavior: 'smooth',
+    })
+  })
+})
+
 //Collapsed navbar
 function navPlugin(activeLink = 0) {
   const navBtn = document.querySelector('.nav-toggle')
